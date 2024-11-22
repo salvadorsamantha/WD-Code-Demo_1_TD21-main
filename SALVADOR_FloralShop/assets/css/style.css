@@ -1,0 +1,315 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #F25278;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+
+/* Header Styles */
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.header-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image {
+    display: flex;
+    animation: slide 15s infinite ease-in-out;
+}
+
+.header-image img {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    40%, 60% { transform: translateX(-100%); }
+    80%, 100% { transform: translateX(-200%); }
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.8); /* Slightly stronger shadow */
+}
+
+.header-content h1 {
+    font-size: 4rem; /* Increased font size */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.header-content p {
+    font-size: 1.5rem; /* Larger text for the paragraph */
+    margin: 1.5rem 0;
+}
+
+.header-content a {
+    display: inline-block;
+    margin: 0.7rem;
+    padding: 1rem 2rem; /* Larger buttons */
+    border: 0.2rem solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Larger button text */
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-content a:hover {
+    background-color: white;
+    color: rgb(255, 161, 184);
+}
+
+
+/* Product Section Styles */
+.product-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #ffe7b4;
+    margin-bottom: 3rem;
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 250px;
+    height: 350px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-info {
+    padding-top: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Background Colors */
+#occasion-collections {
+    background-color: #f28b82;
+}
+
+#arrangement-collections {
+    background-color: #d0c4ff;
+}
+
+#special-offers {
+    background-color: #c5e1f7;
+}
+
+/* Reviews Section Styles */
+.reviews {
+    text-align: center;
+}
+
+.reviews-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.review {
+    flex: 0 0 33.33%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.review-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+button.prev, button.next {
+    background: #ff69b4;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+}
+
+button.prev:hover, button.next:hover {
+    color: #0066cc;
+}
+
+/* Contact Us and Footer */
+.contact-us, .footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+}
+
+/* FAQ Section Styles */
+.faq {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+.faq h2 {
+    text-align: center;
+    color: #ff69b4; /* Matching the flower shop theme */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.faq-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #ffecf1; /* Light pink on hover */
+    border-radius: 8px;
+}
+
+.faq-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.faq-item a:hover {
+    color: #ff69b4; /* Theme color on hover */
+    text-decoration: underline;
+}
+
+.faq-item p {
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* FAQ Item Animation */
+.faq-item a::before {
+    content: "❓";
+    margin-right: 8px;
+    color: #ff69b4; /* Question mark color */
+}
+
+.faq-item p {
+    margin-left: 20px; /* Indent answer for visual structure */
+    color: #666;
+    display: none; /* Hide answer by default */
+}
+
+.faq-item a:focus + p,
+.faq-item a:hover + p {
+    display: block; /* Show answer on link focus or hover */
+    transition: opacity 0.3s ease;
+}
